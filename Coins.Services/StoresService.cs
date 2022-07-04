@@ -34,7 +34,11 @@ namespace Coins.Services
         private readonly StorageService _storage;
         private readonly IUnitOfWork _unitOfWork;
         private readonly INotificationsService _notificationService;
-        public StoresService(IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager, StorageService storage, INotificationsService notificationService)
+        public StoresService(
+            IUnitOfWork unitOfWork,
+            UserManager<ApplicationUser> userManager,
+            StorageService storage,
+            INotificationsService notificationService)
         {
             this._unitOfWork = unitOfWork;
             this._storage = storage;
